@@ -1,0 +1,31 @@
+﻿@page
+@model TradeDesk.Pages.AccountsModel
+@{
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(x => x.TradeableAccounts[0].AccountNumber)</th>
+            <th>@Html.DisplayNameFor(x => x.TradeableAccounts[0].Currency)</th>
+            <th>@Html.DisplayNameFor(x => x.TradeableAccounts[0].TotalBalance)</th>
+            <th>@Html.DisplayNameFor(x => x.TradeableAccounts[0].TradeableBalance)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var account in Model.TradeableAccounts)
+        {
+            <tr>
+                <td>@account.AccountNumber</td>
+                <td>@account.Currency</td>
+                <td>@account.TotalBalance</td>
+                <td>@account.TradeableBalance</td>
+                <td>
+                    Links will go here
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

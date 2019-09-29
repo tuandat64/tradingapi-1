@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Trading.Foundation.Dtos.Orders" Version="1.0.0.122" />
+    <PackageReference Include="Trading.Foundation.Protocol" Version="1.0.0.122" />
+  </ItemGroup>
+
+</Project>

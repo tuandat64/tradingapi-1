@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="AdminLTE" Version="2.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Trading.Foundation.Dtos.Accounts" Version="1.0.0.118" />
+    <PackageReference Include="Trading.Foundation.Dtos.Core" Version="1.0.0.122" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gateway.Middleware\Gateway.Middleware.csproj" />
+    <ProjectReference Include="..\TradingApi.Web.Client\TradingApi.Web.Client.csproj" />
+  </ItemGroup>
+
+</Project>

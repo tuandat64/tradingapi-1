@@ -1,0 +1,29 @@
+﻿@page
+@model TradeDesk.Pages.PricesModel;
+@{
+    ViewData["Title"] = "Currency Prices";
+}
+
+<h1>Currency Prices</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(x => x.Prices[0].Pair)</th>
+            <th>@Html.DisplayNameFor(x => x.Prices[0].Rate)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var price in Model.Prices)
+        {
+            <tr>
+                <td>@price.Pair</td>
+                <td>@price.Rate</td>
+                <td>
+                    Links will go here
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

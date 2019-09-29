@@ -1,0 +1,29 @@
+﻿@page
+@model TradeDesk.Pages.CurrenciesModel
+@{
+    ViewData["Title"] = "Tradeable Currencies";
+}
+
+<h1>Tradeable Currencies</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(x => x.Currencies[0].Base)</th>
+            <th>@Html.DisplayNameFor(x => x.Currencies[0].Quote)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var account in Model.Currencies)
+        {
+            <tr>
+                <td>@account.Base</td>
+                <td>@account.Quote</td>
+                <td>
+                    Links will go here
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

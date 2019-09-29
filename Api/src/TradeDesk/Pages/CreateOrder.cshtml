@@ -1,0 +1,92 @@
+﻿@page
+@model TradeDesk.Pages.CreateOrderModel
+@{
+    ViewData["Title"] = "Create an FX Order";
+}
+
+<body>
+    <div class="margin">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">Create FX Order</h3>
+            </div>
+            <form class="form-horizontal">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-flat">Currency Pair</button>
+                                <button type="button" class="btn btn-default btn-flat dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">USD-BTC</a></li>
+                                    <li><a href="#">CHF-BTC</a></li>
+                                    <li><a href="#">BTC-USD</a></li>
+                                    <li><a href="#">BTC-CHF</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-flat">Buy / Sell</button>
+                                <button type="button" class="btn btn-default btn-flat dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Buy</a></li>
+                                    <li><a href="#">Sell</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Quantity</label>
+
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="inputEmail3" placeholder="100">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-flat">Best Execution / Quote</button>
+                                <button type="button" class="btn btn-default btn-flat dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Best Execution</a></li>
+                                    <li><a href="#">Quote</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+
+            <div>
+                <p class="text-muted well well-sm no-shadow" style="margin-top: 10px;">
+                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles, weebly ning heekya handango imeem plugg
+                    dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
+                </p>
+            </div>
+
+        </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+
+    <script>
+        $(".dropdown-menu li a").click(function () {
+            $(".btn:first-child").html($(this).text());
+        });
+    </script>
+
+</body>
