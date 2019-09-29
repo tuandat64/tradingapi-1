@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Trading.Foundation.Dtos</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Trading.Foundation.Dtos.Currency\Trading.Foundation.Dtos.Core.csproj" />
+  </ItemGroup>
+
+</Project>

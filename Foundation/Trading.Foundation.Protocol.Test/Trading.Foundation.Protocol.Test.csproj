@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Trading.Foundation.Dtos.Accounts\Trading.Foundation.Dtos.Accounts.csproj" />
+    <ProjectReference Include="..\Trading.Foundation.Dtos.Currency\Trading.Foundation.Dtos.Core.csproj" />
+    <ProjectReference Include="..\Trading.Foundation.Dtos.MarketData\Trading.Foundation.Dtos.MarketData.csproj" />
+    <ProjectReference Include="..\Trading.Foundation.Dtos.Orders\Trading.Foundation.Dtos.Orders.csproj" />
+    <ProjectReference Include="..\Trading.Foundation.Protocol\Trading.Foundation.Protocol.csproj" />
+  </ItemGroup>
+
+</Project>

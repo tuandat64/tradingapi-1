@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Channel.Dtos.Orders</name>
+    </assembly>
+    <members>
+        <member name="T:Channel.Dtos.Orders.ExecutionStrategy">
+            <summary>
+            Specifies how an order will be executed
+            </summary>
+        </member>
+        <member name="F:Channel.Dtos.Orders.ExecutionStrategy.REQUEST_FOR_QUOTE">
+            <summary>
+            RequestEnvelope a guaranteed price for an instrument
+            RFQs are time-limited and must be executed prior to expiry
+            </summary>
+        </member>
+        <member name="F:Channel.Dtos.Orders.ExecutionStrategy.BEST_EXECUTION">
+            <summary>
+            Ask that the order be fulfilled at the current market rate
+            The order may be fulfilled in single or multiple parts
+            spread over a time period according to the execution policy
+            Slicing comments can be added to the order
+            </summary>
+        </member>
+        <member name="T:Channel.Dtos.Orders.BuyOrderCcy">
+            <summary>
+            request object for creating a buy order using a currency pair
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.BuyOrderCcy.BaseCurrencyBuyAmount">
+            <summary>
+            the amount of base currency to buy
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.BuyOrderCcy.BaseCurrency">
+            <summary>
+            you are buying this
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.BuyOrderCcy.QuoteCurrency">
+            <summary>
+            you are selling this
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.BuyOrderCcy.Comment">
+            <summary>
+            allows API clients to add 
+            free text information to the request
+            </summary>
+        </member>
+        <member name="T:Channel.Dtos.Orders.BuyOrderAcc">
+            <summary>
+            request object for creating a buy order using accounts
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.BuyOrderAcc.BaseAccountBuyAmount">
+            <summary>
+            the amount of base currency to buy
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.BuyOrderAcc.BaseAccount">
+            <summary>
+            you are buying this
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.BuyOrderAcc.QuoteAccount">
+            <summary>
+            you are selling this
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.BuyOrderAcc.Comment">
+            <summary>
+            allows API clients to add 
+            free text information to the request
+            </summary>
+        </member>
+        <member name="T:Channel.Dtos.Orders.SellOrderCcy">
+            <summary>
+            request object for creating a sell order
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.SellOrderCcy.BaseCurrencySellAmount">
+            <summary>
+            the amount of base currency to sell
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.SellOrderCcy.BaseCurrency">
+            <summary>
+            the base currency (you are selling this)
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.SellOrderCcy.QuoteCurrency">
+            <summary>
+            the quote currency (which you are buying)
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.SellOrderCcy.Comment">
+            <summary>
+            allows API clients to add 
+            free text information to the request
+            </summary>
+        </member>
+        <member name="T:Channel.Dtos.Orders.SellOrderAcc">
+            <summary>
+            request object for creating a buy order
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.SellOrderAcc.BaseAccountSellAmount">
+            <summary>
+            the amount of base currency to sell
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.SellOrderAcc.BaseAccount">
+            <summary>
+            the base currency (you are selling this)
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.SellOrderAcc.QuoteAccount">
+            <summary>
+            the quote currency (which you are buying)
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.SellOrderAcc.Comment">
+            <summary>
+            allows API clients to add 
+            free text information to the request
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.Order.RegistrationTimestamp">
+            <summary>
+            In unix time. 100ns precision
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.Order.CompletionTimestamp">
+            <summary>
+            In unix time. 100ns precision
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.Order.ExpiryTimestamp">
+            <summary>
+            In unix time. 100ns precision
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.ExchangeRate.Timestamp">
+            <summary>
+            In unix time. 100ns precision
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.Quote.RegistrationTimestamp">
+            <summary>
+            In unix time. 100ns precision
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.Orders.Quote.ExpiryTimestamp">
+            <summary>
+            In unix time. 100ns precision
+            </summary>
+        </member>
+    </members>
+</doc>

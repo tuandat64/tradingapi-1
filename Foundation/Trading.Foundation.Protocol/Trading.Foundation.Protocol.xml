@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Channel.Dtos</name>
+    </assembly>
+    <members>
+        <member name="T:Channel.Dtos.RequestEnvelope`1">
+            <summary>
+            Envelope for channel request DTOs
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Channel.Dtos.RequestEnvelope`1.Items">
+            <summary>
+            Generic RequestEnvelope Collection
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.RequestEnvelope`1.Properties">
+            <summary>
+            Properties Collection
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.RequestEnvelope`1.Ctx">
+            <summary>
+            Context object
+            - TODO superseded by Properties?
+            - or should the properties set be a context?
+            - I suspect the latter...
+            </summary>
+        </member>
+        <member name="T:Channel.Dtos.ResponseEnvelope`1">
+            <summary>
+            Envelope for channel response DTOs
+            </summary>
+            <typeparam name="TPayload"></typeparam>
+        </member>
+        <member name="P:Channel.Dtos.ResponseEnvelope`1.Properties">
+            <summary>
+            Properties Collection
+            </summary>
+        </member>
+        <member name="P:Channel.Dtos.ResponseEnvelope`1.Ctx">
+            <summary>
+            Context object
+            - TODO superseded by Properties?
+            - or should the properties set be a context?
+            - I suspect the latter...
+            </summary>
+        </member>
+    </members>
+</doc>
